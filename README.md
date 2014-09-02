@@ -68,7 +68,9 @@ Whether any empty objects exist in the digitalData object.
 Nested objects, following the structure of the digitalData object. Highlights empty keys.
 
 If an object is empty, its key contains:
-```{
+
+```
+{
     "_isEmpty": true
 }
 ```
@@ -81,7 +83,9 @@ Nested objects, following the structure of the digitalData object. Shows whether
 checks.
 
 Here is an example of a passed type check where the key is an object.
-```{
+
+```
+{
     "_typeExpected": "object",
     "_typeFound": "object",
     "_typeCheck": "passed",
@@ -89,7 +93,9 @@ Here is an example of a passed type check where the key is an object.
 ```
 
 Here is an example of a failed type check. The key is expected to be a string but instead is a number. Its key contains:
-```{
+
+```
+{
     "_typeExpected": "string",
     "_typeFound": "number",
     "_typeCheck": "failed",
@@ -102,7 +108,9 @@ Nested objects, following the structure of the digitalData object. Some objects 
 layer. If these are missing, then their absence is flagged here.
 
 If a required object is missing, its key contains:
-```{
+
+```
+{
     "_isMissing": true
 }
 ```
