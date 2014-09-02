@@ -13,8 +13,9 @@ Triggered Messaging, an analytics provider and a tag management provider).
 Type these commands into a terminal to quickly install the validator:
 
 1. Clone repo: `git clone git@github.com:TriggeredMessaging/digitalDataValidator.git`
-2. Install Node.js modules: `npm install`
-3. Run unit tests, making sure they all pass: `npm test`
+2. Change into cloned directory: `cd digitalDataValidator`
+3. Install Node.js modules: `npm install`
+4. Run unit tests, making sure they all pass: `npm test`
 
 
 The Digital Data Layer is stored in an object named `digitalData`. To validate a `digitalData` object, pass it into the
