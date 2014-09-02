@@ -1,0 +1,27 @@
+{
+  "name": "digitalDataValidator",
+  "version": "0.0.1",
+  "description": "Validate W3C digitalData objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TriggeredMessaging/digitalDataValidator.git"
+  },
+  "keywords": [
+    "digitalData"
+  ],
+  "author": "Muhammed Miah",
+  "license": "APL2",
+  "bugs": {
+    "url": "https://github.com/TriggeredMessaging/digitalDataValidator/issues"
+  },
+  "homepage": "https://github.com/TriggeredMessaging/digitalDataValidator",
+  "dependencies": {
+    "browserify": "~5.10.0",
+    "should": "~4.0.4",
+    "underscore": "~1.6.0"
+  }
+}

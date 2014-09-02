@@ -1,0 +1,298 @@
+{
+    "_type": "object",
+    "version": {
+        "_type": "string",
+        "_required": true,
+        "_doc": ""
+    },
+    "pageInstanceID": {
+        "_type": "string",
+        "_doc": ""
+    },
+    "page": {
+        "_type": "object",
+        "_required": true,
+        "_doc": "",
+        "pageInfo": {
+            "_type": "object",
+            "_doc": "",
+            "pageID": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "pageName": {
+                "_type": "string",
+                "_required": true,
+                "_doc": "The title of the current page."
+            },
+            "destinationURL": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "referringURL": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "sysEnv": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "variant": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "version": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "breadcrumbs": {
+                "_type": "array",
+                "_doc": "",
+                "_entry": {
+                    "_type": "string",
+                    "_doc": ""
+                }
+            },
+            "author": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "issueDate": {
+                "_type": "ignore",
+                "_doc": ""
+            },
+            "effectiveDate": {
+                "_type": "ignore",
+                "_doc": ""
+            },
+            "expiryDate": {
+                "_type": "ignore",
+                "_doc": ""
+            },
+            "language": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "geoRegion": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "industryCodes": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "publisher": {
+                "_type": "string",
+                "_doc": ""
+            }
+        },
+        "category": {
+            "_type": "object",
+            "_doc": "",
+            "pageType": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "primaryCategory": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "subCategory1": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "subCategory2": {
+                "_type": "string",
+                "_doc": ""
+            }
+        },
+        "attributes": {
+            "_type": "ignore",
+            "_doc": ""
+        }
+    },
+    "user": {
+        "_type": "object",
+        "_doc": "",
+        "profile": {
+            "_type": "array",
+            "_doc": "",
+            "_entry": {
+                "_type": "object",
+                "_doc": "",
+                "profileInfo": {
+                    "_type": "object",
+                    "_doc": "",
+                    "profileID": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "userName": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "email": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "language": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "returningStatus": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "type": {
+                        "_type": "string",
+                        "_doc": ""
+                    }
+                },
+                "address": {
+                    "_type": "object",
+                    "_doc": "",
+                    "line1": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "line2": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "city": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "stateProvince": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "postalCode": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "country": {
+                        "_type": "string",
+                        "_doc": ""
+                    }
+                },
+                "social": {
+                    "_type": "object",
+                    "_doc": "",
+                    "twitter": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "twitterInfo": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "facebook": {
+                        "_type": "string",
+                        "_doc": ""
+                    },
+                    "facebookInfo": {
+                        "_type": "string",
+                        "_doc": ""
+                    }
+                },
+                "attributes": {
+                    "_type": "ignore",
+                    "_doc": ""
+                }
+            }
+        },
+        "segment": {
+            "_type": "object",
+            "_doc": ""
+        }
+    },
+    "cart": {
+        "_type": "object",
+        "_doc": "",
+        "price": {
+            "_type": "object",
+            "_doc": "",
+            "basePrice": {
+                "_type": "number",
+                "_doc": ""
+            },
+            "voucherCode": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "voucherDiscount": {
+                "_type": "number",
+                "_doc": ""
+            },
+            "currency": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "taxRate": {
+                "_type": "number",
+                "_doc": ""
+            },
+            "shipping": {
+                "_type": "number",
+                "_doc": ""
+            },
+            "shippingMethod": {
+                "_type": "string",
+                "_doc": ""
+            },
+            "priceWithTax": {
+                "_type": "number",
+                "_doc": ""
+            },
+            "cartTotal": {
+                "_type": "number",
+                "_doc": ""
+            }
+        },
+        "items": {
+            "_type": "array",
+            "_doc": "",
+            "_entry": {
+                "_type": "product",
+                "_doc": "",
+                "quantity": {
+                    "_type": "number",
+                    "_doc": ""
+                },
+                "price": {
+                    "_type": "object",
+                    "_doc": ""
+                }
+            }
+        },
+        "attributes": {
+            "_type": "ignore",
+            "_doc": ""
+        }
+    },
+    "product": {
+        "_type": "array",
+        "_doc": "",
+        "_entry": {
+            "_type": "product",
+            "_doc": ""
+        }
+    },
+    "transaction": {
+        "_type": "ignore",
+        "_doc": ""
+    },
+    "event": {
+        "_type": "ignore",
+        "_doc": ""
+    },
+    "component": {
+        "_type": "ignore",
+        "_doc": ""
+    },
+    "privacyAccessCategories": {
+        "_type": "ignore",
+        "_doc": ""
+    }
+}

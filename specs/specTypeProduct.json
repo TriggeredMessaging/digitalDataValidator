@@ -1,0 +1,102 @@
+{
+    "_type": "object",
+    "_doc": "",
+    "category": {
+        "_type": "object",
+        "_doc": "",
+        "productType": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "primaryCategory": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "subCategory1": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "subCategory2": {
+            "_type": "string",
+            "_doc": ""
+        }
+    },
+    "price": {
+        "_type": "object",
+        "_doc": "",
+        "currency": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "basePrice": {
+            "_type": "number",
+            "_doc": ""
+        },
+        "priceWithTax": {
+            "_type": "number",
+            "_doc": ""
+        },
+        "taxRate": {
+            "_type": "number",
+            "_doc": ""
+        }
+    },
+    "productInfo": {
+        "_type": "object",
+        "_doc": "",
+        "description": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "productID": {
+            "_type": "string",
+            "_required": true,
+            "_doc": ""
+        },
+        "productImage": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "productName": {
+            "_type": "string",
+            "_required": true,
+            "_doc": ""
+        },
+        "productThumbnail": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "productURL": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "sku": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "size": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "color": {
+            "_type": "string",
+            "_doc": ""
+        },
+        "manufacturer": {
+            "_type": "string",
+            "_doc": ""
+        }
+    },
+    "linkedProduct": {
+        "_type": "array",
+        "_doc": "",
+        "_entry": {
+            "_type": "product",
+            "_doc": ""
+        }
+    },
+    "attributes": {
+        "_type": "ignore",
+        "_doc": ""
+    }
+}
