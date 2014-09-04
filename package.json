@@ -1,5 +1,5 @@
 {
-  "name": "digitalDataValidator",
+  "name": "digitaldatavalidator",
   "version": "0.0.1",
   "description": "Validate W3C digitalData objects",
   "main": "index.js",
