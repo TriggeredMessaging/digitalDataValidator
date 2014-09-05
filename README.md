@@ -10,19 +10,12 @@ Triggered Messaging, an analytics provider and a tag management provider).
 
 ## Instructions
 
-Type these commands into a terminal to quickly install the validator:
+You can either use the validator as a node module (npm install digitaldatavalidator) or in the browser (using the validator-web.js script). 
 
-1. Clone repo: `git clone git@github.com:TriggeredMessaging/digitalDataValidator.git`
-2. Change into cloned directory: `cd digitalDataValidator`
-3. Install Node.js modules: `npm install`
-4. Run unit tests, making sure they all pass: `npm test`
-
-
-The Digital Data Layer is stored in an object named `digitalData`. To validate a `digitalData` object, pass it into the
-method `validator.run()`. This will return the validation results.
+When running on the web, `validator` will be exposed as a global - from there you can run in the same way as in node:
 
 ```
-validator.run(digitalData);
+var result = validator.run(digitalData);
 ```
 
 
@@ -33,14 +26,14 @@ the structure of the inputted digitalData object. Since the latter three objects
 safely be merged if desired.
 
 ```
-var result = {
-    "isProductsMissingInCategoryPage": Boolean(),
-    "isProductsMissingInCart": Boolean(),
-    "hasEmptyObjects": Boolean(),
-    "emptyObjects": Object(),
-    "types": Object(),
-    "missingObjects": Object()
-};
+{
+    "isProductsMissingInCategoryPage": Boolean,
+    "isProductsMissingInCart": Boolean,
+    "hasEmptyObjects": Boolean,
+    "emptyObjects": Object,
+    "types": Object,
+    "missingObjects": Object
+}
 ```
 
 ### `result.isProductsMissingInCategoryPage`
@@ -117,6 +110,10 @@ If a required object is missing, its key contains:
 
 If a required object exists, nothing for it shows up here.
 
+## Rebuilding the web script
+
+You can rebuild the web script by running `make buildweb` - this will user browserify to re-create the script.
+
 
 ## Specification
 
@@ -124,6 +121,9 @@ The script validates against the specification found in the files spec/specType.
 The latter is an object type that is referenced in the former and is recursive. To change the specification, modify the
 JSON objects in these files.
 
+## Support / Issues
+
+Pull requests / issues / suggestions are welcome on github issues. 
 
 ## Authors
 Muhammed Onu Miah,
